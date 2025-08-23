@@ -14,20 +14,25 @@ public class StringsCode {
            MyString[i] = input.next();
            Count = Count + MyString[i].length();
         }
-
+        
         // check the lexicograph and output
         System.out.println("\nOutput : ");
+
+        // Print Count output
+        System.out.println("Char total : " + Count) ;
             if(MyString[position].compareTo(MyString[position + 1]) > 0){
                 System.out.println("Yes");
             }else if((MyString[position].compareTo(MyString[position + 1]) < 0)){
                 System.out.println("No");
             }
 
-        // Print Count output
-        System.out.println("Char total : " + Count) ;
+        // upperCase the String
+        for(int i = 0; i < 2; i++){
+            MyString[i] = MyString[i].substring(0, 1).toUpperCase() + MyString[i].substring(1);
+            System.out.print(MyString[i]);
+            System.out.print(" ");
+        }
 
-        // String upCase = MyString.toUpperCase();
-        // System.out.println(upCase);
         input.close();
     }
 }

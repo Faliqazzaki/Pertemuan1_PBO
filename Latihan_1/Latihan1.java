@@ -3,6 +3,9 @@ import java.util.InputMismatchException;
 
 public class Latihan1 {
     public static void main(String[] args) {
+        // variable declaration and initialitation
+        Scanner input = new Scanner(System.in); 
+        
         // INFORMATION ABOUT DATA TYPE 
         // System.out.println("Besar MIN Byte : " + Byte.MIN_VALUE);
         // System.out.println("Besar MIN Short : " + Short.MIN_VALUE);
@@ -13,11 +16,6 @@ public class Latihan1 {
         // System.out.println("Besar MAX Short : " + Short.MAX_VALUE);
         // System.out.println("Besar MAX Integer : " + Integer.MAX_VALUE);
         // System.out.println("Besar MAX Long : " + Long.MAX_VALUE);
-
-
-        // variable declaration and initialitation
-        Scanner input = new Scanner(System.in); 
-        // ArrayList<Long> numberArray = new ArrayList<>();
 
         // begin
         Long[] n = new Long[6];
